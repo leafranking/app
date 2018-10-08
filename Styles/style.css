@@ -1,0 +1,75 @@
+body * {
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+body .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #136a8a;
+  background: -webkit-linear-gradient(to right,#267871,#136a8a);
+  background: linear-gradient(to right,#267871,#136a8a);
+}
+body .header .logo {
+  color: white;
+  position: absolute;
+  top: 8px;
+  left: 5%;
+  font-size: 30px;
+  font-weight: 600;
+}
+body .header ul {
+  color: white;
+  list-style: none;
+  margin: auto;
+  display: table;
+  font-size: 24px;
+}
+body .header ul li {
+  display: inline-block;
+  margin: 10px 90px;
+}
+body .header .lang {
+  position: absolute;
+  right: 5%;
+  top: 0px;
+  color: white;
+  font-size: 24px;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+  height: 100%;
+  padding-top: 10px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+body .container {
+  padding: 60px 5%;
+}
+body .container h1 {
+  color: #267871;
+  font-size: 45px;
+  text-transform: uppercase;
+}
+body .container h2 {
+  color: #267871;
+}
+body .container.mainPage {
+  text-align: center;
+}
+body .container.mainPage table {
+  border-collapse: collapse;
+  margin: auto;
+  min-width: 80%;
+}
+body .container.mainPage table tr:nth-child(odd) {
+  background-color: #e6e6e6;
+}
+body .container.mainPage table tr th {
+  background-color: #267871;
+  color: white;
+  padding: 30px 40px;
+}
+body .container.mainPage table tr td {
+  padding: 10px;
+}

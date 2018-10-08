@@ -1,0 +1,93 @@
+@green : #267871;
+
+body{
+  * {
+    box-sizing:border-box;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  .header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    background: #136a8a;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #267871, #136a8a);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #267871, #136a8a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    .logo{
+      color: white;
+      position: absolute;
+      top: 8px;
+      left: 5%;
+      font-size: 30px;
+      font-weight: 600;
+    }
+
+    ul{
+      color: white;
+      list-style: none;
+      margin: auto;
+      display: table;
+      font-size:24px;
+
+      li{
+        display:inline-block;
+        margin: 10px 90px;
+      }
+    }
+
+    .lang{
+      position: absolute;
+      right: 5%;
+      top: 0px;
+      color: white;
+      font-size: 24px;
+      border-left: 1px solid white;
+      border-right: 1px solid white;
+      height: 100%;
+      padding-top: 10px;
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+  }
+
+  .container{
+    padding:60px 5%;
+
+    h1{
+      color:@green;
+      font-size: 45px;
+      text-transform: uppercase;
+    }
+    h2{
+      color:@green;
+    }
+
+    &.mainPage{
+      text-align:center;
+
+      table{
+        border-collapse: collapse;
+        margin:auto;
+        min-width:80%;
+        tr{
+
+          &:nth-child(odd){
+            background-color:#e6e6e6;
+          }
+
+          th{
+            background-color: @green;
+            color: white;
+            padding: 30px 40px;
+          }
+
+          td{
+            padding:10px;
+          }
+        }
+      }
+    }
+  }
+}
