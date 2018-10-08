@@ -1,2 +1,2 @@
 # Hello world!
-This is new rating app.test
+This is new rating app.
