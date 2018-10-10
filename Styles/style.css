@@ -1,3 +1,6 @@
+body {
+  margin: 0px;
+}
 body * {
   box-sizing: border-box;
   font-family: 'Open Sans', sans-serif;
@@ -45,6 +48,7 @@ body .header .lang {
 }
 body .container {
   padding: 60px 5%;
+  min-height: calc(100vh - 42px);
 }
 body .container h1 {
   color: #267871;
@@ -72,4 +76,12 @@ body .container.mainPage table tr th {
 }
 body .container.mainPage table tr td {
   padding: 10px;
+}
+body .footer {
+  background-color: #267871;
+  padding: 10px 5%;
+  color: white;
+}
+body .footer .right {
+  float: right;
 }

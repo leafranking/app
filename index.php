@@ -4,7 +4,7 @@
 <div class="container mainPage">
   <h1>Grass Draft</h1>
 
-  <h2>Top weed</h2>
+  <h2>Top 100 Marijuana on the market</h2>
 
   <table>
     <tr>
