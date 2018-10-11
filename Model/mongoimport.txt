@@ -1,0 +1,1 @@
+mongoimport --host rateeverythingcluster-shard-00-00-8tmkp.mongodb.net:27017 --db db_rateWeed --collection col_weedProduct  --type json --file test.json --jsonArray --authenticationDatabase admin --ssl --username user_weedAdmin --password xxxxxxxxx
