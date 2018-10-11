@@ -1,7 +1,7 @@
 
 <?php include("Views/header.php"); ?>
 
-<div class="container mainPage">
+<div class="container mainPage" ng-app="app" ng-controller="listWeedController">
   <h1>Grass Draft</h1>
 
   <h2>Top 100 Marijuana on the market</h2>
@@ -11,38 +11,17 @@
       <th>Rank</th>
       <th>Points</th>
       <th>Name</th>
-      <th>Category</th>
+      <th>race</th>
+      <th>flavor</th>
+      <th>effects</th>
     </tr>
-
-    <tr>
-      <td>1</td>
-      <td>8109</td>
-      <td>Lorem</td>
-      <td>Ipsum</td>
-    </tr>
-    <tr>
-      <td>2</td>
-      <td>629</td>
-      <td>Lorem</td>
-      <td>Ipsum</td>
-    </tr>
-    <tr>
-      <td>3</td>
-      <td>591</td>
-      <td>Lorem</td>
-      <td>Ipsum</td>
-    </tr>
-    <tr>
-      <td>4</td>
-      <td>44</td>
-      <td>Lorem</td>
-      <td>Ipsum</td>
-    </tr>
-    <tr>
-      <td>5</td>
-      <td>12</td>
-      <td>Lorem</td>
-      <td>Ipsum</td>
+    <tr ng-repeat="weed in listWeed">
+      <td>{{$index}}</td>
+      <td>{{weed.points || 0}}</td>
+      <td>{{weed.name}}</td>
+      <td>{{weed.race}}</td>
+      <td>{{weed.getAllFlavors()}}</td>
+      <td>{{weed.effects}}</td>
     </tr>
   </table>
 </div>
